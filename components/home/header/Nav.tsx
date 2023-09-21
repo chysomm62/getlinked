@@ -43,7 +43,7 @@ const Nav: FC<refTypes> = ({
   };
 
   return (
-    <nav className="border-b border-white font-montserrat">
+    <nav className="line font-montserrat">
       <div className="max-w-screen-xl mx-auto flex justify-between items-center h-20 lg:h-28 pt-4 pl-8">
         <Link href="/">
           <span className="text-white text-base font-bold md:text-4xl font-clashDisplay">
@@ -78,7 +78,10 @@ const Nav: FC<refTypes> = ({
           </ul>
         </div>
 
-        <button className="relative z-10 lg:hidden mr-4" onClick={toggleMenu}>
+        <button
+          className="relative z-10 lg:hidden mr-5 px-3"
+          onClick={toggleMenu}
+        >
           {isOpen ? (
             <div className="border border-purple-1 rounded-full p-1">
               <MdClose color="#FFFFFF" fontSize="25px" />

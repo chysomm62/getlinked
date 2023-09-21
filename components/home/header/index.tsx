@@ -6,8 +6,8 @@ import Image from "next/image";
 import styles from "./Hero.module.css";
 import { refTypes } from "@/lib/types/ref.types";
 import Button from "@/components/common/Button";
-import { BombIcon, ChainIcon } from "@/components/common/Icons";
 import Nav from "./Nav";
+import { BombIcon, ChainIcon } from "@/components/common/Icons";
 
 const Hero: FC<refTypes> = ({
   homeRef,
@@ -18,7 +18,7 @@ const Hero: FC<refTypes> = ({
 }) => {
   const clickHandler = () => {};
   return (
-    <header ref={homeRef} className={` font-montserrat border-b border-white`}>
+    <header ref={homeRef} className={` font-montserrat line`}>
       <Nav
         homeRef={homeRef}
         aboutRef={aboutRef}
@@ -31,7 +31,7 @@ const Hero: FC<refTypes> = ({
           className={`lg:flex items-center justify-end py-5 max-w-screen-xl mx-auto text-center`}
         >
           <span
-            className={`text-white text-center lg:text-right text-base mx-auto lg:mx-0 md:text-4xl font-bold italic font-montserrat ${styles.innova}`}
+            className={`text-white text-center lg:text-right text-base mx-auto lg:mx-0 md:text-4xl font-bold italic font-montserrat ${styles.innova} `}
           >
             Igniting a Revolution in HR Innovation
           </span>
@@ -48,10 +48,9 @@ const Hero: FC<refTypes> = ({
                   className={`font-bold mb-2 text-3xl md:text-5xl lg:text-7xl leading-tight font-clashDisplay tracking-normal text-center lg:text-left ${styles.h1}`}
                 >
                   getlinked Te<span className={`${styles.c}`}>c</span>h
-                  Hackathon{" "}
-                  <span className="text-purple-1 flex items-center">
-                    {" "}
-                    1.0
+                  <span className="block whitespace-nowrap">
+                    Hackathon
+                    <span className="text-purple-1 "> 1.0</span>
                     <span className="hidden lg:flex items-center">
                       <ChainIcon size="86" />
                       <BombIcon size="58" />

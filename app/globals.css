@@ -40,6 +40,10 @@ button:hover {
   @apply border border-purple-2  text-purple-2;
 }
 
+.line {
+  @apply border-b border-white/20;
+}
+
 h2 {
   @apply text-xl md:text-3xl  leading-tight font-bold font-clashDisplay;
 }

@@ -1,17 +1,14 @@
 import Image from "next/image";
-import bulb from "@/public/images/home/bulb_idea.png";
+import lady from "@/public/images/home/sitting_lady.png";
 
-const Introduction = () => {
+const Rules = () => {
   return (
-    <section className="py-6 md:py-14 text-white line">
-      <div className="px-5 md:flex md:justify-between md:items-center py-6 gap-5 lg:gap-16 max-w-screen-lg mx-auto  ">
-        <div className="flex-1 md:flex items-center justify-end">
-          <Image src={bulb} alt="Bulb transmitting ideas" className="w-full" />
-        </div>
-        <div className="flex-1 mt-8">
+    <section className="py-6 md:py-14 text-white  bg-grey-1 line">
+      <div className="px-5 flex flex-col-reverse lg:flex-row lg:justify-between lg:items-center py-6 gap-5 lg:gap-16 max-w-screen-lg mx-auto">
+        <div className="flex-1">
           <h2 className=" font-semibold mb-4 text-center lg:text-left">
-            Introduction to getlinked
-            <span className="text-purple-1 block">tech Hackathon 1.0</span>
+            Rules and
+            <span className="text-purple-1 block"> Guidelines</span>
           </h2>
           <p className="font-book text-sm font-montserrat text-center lg:text-left lg:mr-2 leading-7">
             Our tech hackathon is a melting pot of visionaries, and its purpose
@@ -23,9 +20,16 @@ const Introduction = () => {
             we&apos;re all about!
           </p>
         </div>
+        <div className="flex-1 md:flex items-center justify-end">
+          <Image
+            src={lady}
+            alt="lady sitting and pressing her tablet"
+            className="w-full"
+          />
+        </div>
       </div>
     </section>
   );
 };
 
-export default Introduction;
+export default Rules;

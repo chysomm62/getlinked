@@ -2,6 +2,7 @@
 
 import Hero from "@/components/home/Header";
 import Introduction from "@/components/home/Introduction";
+import Rules from "@/components/home/Rules";
 import { useRef } from "react";
 
 export default function Home() {
@@ -20,6 +21,7 @@ export default function Home() {
         communityRef={communityRef}
       />
       <Introduction />
+      <Rules />
     </>
   );
 }
