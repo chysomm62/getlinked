@@ -1,6 +1,7 @@
 "use client";
 
-import Hero from "@/components/home/header";
+import Hero from "@/components/home/Header";
+import Introduction from "@/components/home/Introduction";
 import { useRef } from "react";
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
         testimonialRef={testimonialRef}
         communityRef={communityRef}
       />
+      <Introduction />
     </>
   );
 }

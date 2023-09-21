@@ -8,7 +8,8 @@
 }
 
 .innova,
-.h1 {
+.h1,
+.c {
   position: relative;
 }
 
@@ -16,11 +17,11 @@
   content: "";
   right: 0;
   position: absolute;
-  top: 60%;
+  top: 105%;
   min-width: 115px;
-  min-height: 7px;
+  min-height: 20px;
   background-image: url("/patterns/line.svg");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: right bottom;
 }
@@ -47,6 +48,19 @@
   min-height: 8px;
   background-image: url("/patterns/star.svg");
   background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+.c::before {
+  content: "";
+  left: 30%;
+  position: absolute;
+  top: -60%;
+  width: 18px;
+  height: 28px;
+  background-image: url("/patterns/bulb.svg");
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: left center;
 }
@@ -81,11 +95,25 @@
   background-position: left center;
 }
 
-@media (max-width: 500px) {
-  .hero::before,
-  .hero::after,
-  .hero_text::before,
-  .hero_text::after {
-    display: none;
+@media (min-width: 700px) {
+  .innova::after {
+    min-width: 250px;
+    min-height: 30px;
+  }
+  .h1::before {
+    min-width: 34px;
+    min-height: 34px;
+    left: 15%;
+    top: -55%;
+  }
+  .h1::after {
+    min-width: 32px;
+    min-height: 32px;
+    left: 90%;
+  }
+  .c::before {
+    width: 53px;
+    height: 73px;
+    top: -70%;
   }
 }

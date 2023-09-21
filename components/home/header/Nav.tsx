@@ -44,7 +44,7 @@ const Nav: FC<refTypes> = ({
 
   return (
     <nav className="border-b border-white font-montserrat">
-      <div className="max-w-screen-xl mx-auto flex justify-between items-center h-24 lg:h-28 pt-4 px-8">
+      <div className="max-w-screen-xl mx-auto flex justify-between items-center h-20 lg:h-28 pt-4 pl-8">
         <Link href="/">
           <span className="text-white text-base font-bold md:text-4xl font-clashDisplay">
             get<span className="text-purple-1">linked</span>
@@ -58,7 +58,7 @@ const Nav: FC<refTypes> = ({
               : "translate-y-[2000px] lg:translate-y-0 fixed top-0 left-0 right-0 bottom-0 w-full h-screen flex items-center justify-center flex-col lg:static lg:h-auto lg:flex-row lg:justify-between"
           }
         >
-          <ul className="flex flex-col space-y-5 mb-16 lg:space-y-0 lg:flex-row lg:mb-0 lg:ml-10 lg:justify-end lg:items-center gap-6 lg:flex-1 text-left w-full px-9 lg:px-1">
+          <ul className="flex flex-col space-y-5 mb-16 lg:space-y-0 lg:flex-row lg:mb-0 lg:ml-10 lg:justify-end lg:items-center gap-16 lg:flex-1 text-left w-full px-9 lg:px-1">
             {links.map((link, index) => (
               <li
                 key={index}
@@ -78,7 +78,7 @@ const Nav: FC<refTypes> = ({
           </ul>
         </div>
 
-        <button className="relative z-10 lg:hidden" onClick={toggleMenu}>
+        <button className="relative z-10 lg:hidden mr-4" onClick={toggleMenu}>
           {isOpen ? (
             <div className="border border-purple-1 rounded-full p-1">
               <MdClose color="#FFFFFF" fontSize="25px" />
