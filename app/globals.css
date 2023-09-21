@@ -2,26 +2,80 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
+  @apply bg-purple-2;
+}
+
+.gradient-background {
   background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    270deg,
+    #903aff 0%,
+    #d434fe 56.42%,
+    #ff26b9 99.99%,
+    #fe34b9 100%
+  );
+}
+
+button {
+  @apply py-3 px-10 font-medium text-base rounded flex items-center justify-center capitalize;
+}
+
+button:hover {
+  @apply brightness-90 transition;
+}
+
+.btn-text {
+  @apply text-purple-2;
+}
+
+.btn-contained {
+  @apply bg-purple-2 text-white gradient-background;
+}
+
+.btn-outlined {
+  @apply border border-purple-2  text-purple-2;
+}
+
+.btn-plain {
+  @apply px-2;
+}
+
+.header-border {
+  @apply w-28 h-1 mx-auto bg-purple-2 my-3;
+}
+
+h2 {
+  @apply text-3xl md:text-[40px] leading-tight font-semibold;
+}
+
+h3 {
+  @apply font-medium text-2xl md:text-3xl;
+}
+
+h4 {
+  @apply font-semibold text-xl;
+}
+
+.form-input,
+.form-textarea,
+.form-select,
+.form-multiselect {
+  @apply w-full rounded-md border border-gray-1 bg-white px-4 py-2 text-sm font-normal text-gray-1 !outline-none focus:border-purple-2 focus:ring-transparent;
+}
+
+.form-input-lg,
+.form-textarea-lg,
+.form-select-lg,
+.form-multiselect-lg {
+  @apply py-2.5 text-base;
+}
+.form-input-sm,
+.form-textarea-sm,
+.form-select-sm,
+.form-multiselect-sm {
+  @apply py-1.5 text-xs;
 }

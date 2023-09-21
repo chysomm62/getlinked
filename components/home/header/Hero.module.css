@@ -1,0 +1,91 @@
+.hero {
+  position: relative;
+  background-image: url("/images/hero/purple_lens_mobile.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-blend: multiply;
+}
+
+.innova,
+.h1 {
+  position: relative;
+}
+
+.innova::after {
+  content: "";
+  right: 0;
+  position: absolute;
+  top: 60%;
+  min-width: 115px;
+  min-height: 7px;
+  background-image: url("/patterns/line.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+.h1::before {
+  content: "";
+  left: 30%;
+  position: absolute;
+  top: -40%;
+  min-width: 14px;
+  min-height: 14px;
+  background-image: url("/patterns/star_white.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+.h1::after {
+  content: "";
+  left: 80%;
+  position: absolute;
+  top: -50%;
+  min-width: 8px;
+  min-height: 8px;
+  background-image: url("/patterns/star.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+.hero_text {
+  position: relative;
+}
+
+.hero_text::before {
+  content: "";
+  left: 5%;
+  position: absolute;
+  top: 10%;
+  width: 16px;
+  height: 16px;
+  background-image: url("/patterns/hero_circle1.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+.hero_text::after {
+  content: "";
+  left: 95%;
+  position: absolute;
+  top: 75%;
+  width: 9px;
+  height: 9px;
+  background-image: url("/patterns/star.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+@media (max-width: 500px) {
+  .hero::before,
+  .hero::after,
+  .hero_text::before,
+  .hero_text::after {
+    display: none;
+  }
+}
