@@ -1,8 +1,6 @@
 "use client";
 
-import Hero from "@/components/home/Header";
-import Introduction from "@/components/home/Introduction";
-import Rules from "@/components/home/Rules";
+import { Criteria, Hero, Introduction, Rules } from "@/components/home";
 import { useRef } from "react";
 
 export default function Home() {
@@ -22,6 +20,7 @@ export default function Home() {
       />
       <Introduction />
       <Rules />
+      <Criteria />
     </>
   );
 }
