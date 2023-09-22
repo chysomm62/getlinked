@@ -53,7 +53,7 @@ h3 {
 }
 
 h4 {
-  @apply font-semibold text-xl font-clashDisplay;
+  @apply font-bold text-xs md:text-2xl font-clashDisplay;
 }
 
 .form-input,

@@ -1,0 +1,13 @@
+.circle {
+  position: relative;
+  display: block;
+}
+
+.circle::before {
+  content: "";
+  height: 77px;
+  width: 1px;
+  background-color: #d434fe;
+  top: -10px;
+  left: 48%;
+}
