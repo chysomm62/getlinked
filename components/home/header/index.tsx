@@ -9,7 +9,7 @@ import Button from "@/components/common/Button";
 import Nav from "./Nav";
 import { BombIcon, ChainIcon } from "@/components/common/Icons";
 
-const Hero: FC<refTypes> = ({
+const Header: FC<refTypes> = ({
   homeRef,
   aboutRef,
   coursesRef,
@@ -95,4 +95,4 @@ const Hero: FC<refTypes> = ({
   );
 };
 
-export default Hero;
+export default Header;

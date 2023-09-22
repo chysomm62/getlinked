@@ -7,7 +7,7 @@ import Button from "@/components/common/Button";
 const FAQs = () => {
   return (
     <section className="py-6 md:py-14 text-white line">
-      <div className="px-5 md:flex md:justify-between md:items-center py-6 gap-5 lg:gap-16 max-w-screen-lg mx-auto  ">
+      <div className="px-5 md:flex md:justify-between md:items-center py-6 gap-5 lg:gap-16 max-w-screen-xl mx-auto  ">
         <div className="flex-1 mt-8">
           <h2 className=" font-semibold mb-4 text-center lg:text-left">
             Frequently Ask

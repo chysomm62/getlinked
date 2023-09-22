@@ -1,7 +1,6 @@
 import Image from "next/image";
 import man_on_cloud from "@/public/images/home/man_on_cloud.png";
 import { TimelineData } from "@/lib/variables/Timeline";
-import styles from "./Timeline.module.css";
 
 const Timeline = () => {
   return (

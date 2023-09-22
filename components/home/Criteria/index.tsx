@@ -8,7 +8,7 @@ const Criteria = () => {
 
   return (
     <section className="py-6 md:py-14 text-white line">
-      <div className="px-5 md:flex md:justify-between md:items-center py-6 gap-5 lg:gap-16 max-w-screen-lg mx-auto  ">
+      <div className="px-5 md:flex md:justify-between md:items-center py-6 gap-5 lg:gap-16 max-w-screen-xl mx-auto  lg:px-10">
         <div className="flex-1 md:flex items-center justify-end">
           <Image
             src={man_woman}

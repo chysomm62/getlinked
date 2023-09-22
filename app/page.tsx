@@ -3,8 +3,10 @@
 import {
   Criteria,
   FAQs,
-  Hero,
+  Header,
   Introduction,
+  Partners,
+  Prizes,
   Rules,
   Timeline,
 } from "@/components/home";
@@ -18,7 +20,7 @@ export default function Home() {
   const communityRef = useRef() as any;
   return (
     <>
-      <Hero
+      <Header
         homeRef={homeRef}
         aboutRef={aboutRef}
         coursesRef={coursesRef}
@@ -30,6 +32,8 @@ export default function Home() {
       <Criteria />
       <FAQs />
       <Timeline />
+      <Prizes />
+      <Partners />
     </>
   );
 }

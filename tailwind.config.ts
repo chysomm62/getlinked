@@ -35,6 +35,7 @@ const config: Config = {
         purple: {
           1: "rgba(212, 52, 254, 1)", //light
           2: "rgba(21, 14, 40, 1)", //dark
+          3: 'rgba(144, 58, 255, 1)'
         },
       },
       boxShadow: {
