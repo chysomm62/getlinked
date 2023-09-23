@@ -1,24 +1,22 @@
-import Image from "next/image";
 import Link from "next/link";
-import { FaBars } from "react-icons/fa";
 import { MdClose } from "react-icons/md";
 import { useState, FC } from "react";
 import Button from "@/components/common/Button";
 import { refTypes } from "@/lib/types/ref.types";
+import { MenuIcon } from "@/components/common/Icons";
 
 const Nav: FC<refTypes> = ({
-  homeRef,
-  aboutRef,
-  coursesRef,
-  testimonialRef,
-  communityRef,
+  timelineRef,
+  overviewRef,
+  faqRef,
+  contactRef,
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const links = [
-    { href: "/", label: "Timeline", active: true, reff: homeRef },
-    { href: "/", label: "Overview", active: false, reff: aboutRef },
-    { href: "/", label: "FAQs", active: false, reff: coursesRef },
-    { href: "/", label: "Contact", active: false, reff: coursesRef },
+    { href: "/", label: "Timeline", active: false, reff: timelineRef },
+    { href: "/", label: "Overview", active: false, reff: overviewRef },
+    { href: "/", label: "FAQs", active: false, reff: faqRef },
+    { href: "/", label: "Contact", active: false, reff: contactRef },
   ];
 
   const handleScroll = (ref: any) => {
@@ -54,19 +52,19 @@ const Nav: FC<refTypes> = ({
         <div
           className={
             isOpen
-              ? " fixed top-0 left-0 right-0 w-full flex items-center justify-center flex-col lg:static lg:h-auto lg:flex-row lg:justify-between z-10 bg-purple-2 py-40"
-              : "translate-y-[2000px] lg:translate-y-0 fixed top-0 left-0 right-0 bottom-0 w-full h-screen flex items-center justify-center flex-col lg:static lg:h-auto lg:flex-row lg:justify-between"
+              ? " fixed top-0 left-0 right-0 w-full flex items-center justify-center flex-col md:static md:h-auto md:flex-row md:justify-between z-10 bg-purple-2 py-40"
+              : "translate-y-[2000px] md:translate-y-0 fixed top-0 left-0 right-0 bottom-0 w-full h-screen flex items-center justify-center flex-col md:static md:h-auto md:flex-row md:justify-between"
           }
         >
-          <ul className="flex flex-col space-y-5 mb-16 lg:space-y-0 lg:flex-row lg:mb-0 lg:ml-10 lg:justify-end lg:items-center gap-3 lg:gap-16 lg:flex-1 text-left w-full px-9 lg:px-1">
+          <ul className="flex flex-col space-y-5 mb-16 md:space-y-0 md:flex-row md:mb-0 md:ml-10 md:justify-end md:items-center gap-3 md:gap-10 lg:gap-16 md:flex-1 text-left w-full px-9 md:px-1">
             {links.map((link, index) => (
               <li
                 key={index}
                 onClick={() => handleClick(link.reff)}
                 className={
                   link.active
-                    ? "font-medium text-lg text-white hover:text-gray-1 cursor-pointer"
-                    : "font-medium text-lg text-white hover:text-gray-1 cursor-pointer"
+                    ? "font-medium text-lg text-purple-1 hover:text-purple-1 cursor-pointer"
+                    : "font-medium text-lg text-white hover:text-purple-1 cursor-pointer"
                 }
               >
                 {link.label}
@@ -79,7 +77,7 @@ const Nav: FC<refTypes> = ({
         </div>
 
         <button
-          className="relative z-10 lg:hidden mr-5 px-3"
+          className="relative z-10 md:hidden mr-5 px-3"
           onClick={toggleMenu}
         >
           {isOpen ? (
@@ -87,7 +85,7 @@ const Nav: FC<refTypes> = ({
               <MdClose color="#FFFFFF" fontSize="25px" />
             </div>
           ) : (
-            <FaBars color="#FFFFFF" fontSize="25px" />
+            <MenuIcon />
           )}
         </button>
       </div>

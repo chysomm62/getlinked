@@ -1,7 +1,6 @@
 export interface refTypes {
-  homeRef: any;
-  aboutRef: any;
-  coursesRef: any;
-  testimonialRef: any;
-  communityRef: any;
+  timelineRef: any;
+  overviewRef: any;
+  faqRef: any;
+  contactRef: any;
 }

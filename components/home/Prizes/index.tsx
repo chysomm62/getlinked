@@ -10,11 +10,11 @@ const Prizes = () => {
       <div className="md:flex items-center justify-center">
         <div className="flex-1"></div>
         <div className="flex-1">
-          <h2 className=" font-semibold mb-4 text-center lg:text-left">
+          <h2 className=" font-semibold mb-4 text-center md:text-left">
             Prizes and
             <span className="text-purple-1 block">Rewards</span>
           </h2>
-          <p className="font-book text-sm font-montserrat text-center lg:text-left lg:mr-2 leading-7 my-4 mx-7 md:mx-0">
+          <p className="font-book text-sm font-montserrat text-center md:text-left md:mr-2 leading-7 my-4 mx-7 md:mx-0">
             Highlight of the prizes or rewards for winners and for participants.
           </p>
         </div>
@@ -28,7 +28,7 @@ const Prizes = () => {
           />
         </div>
         <div className="flex-1 flex items-end gap-3 md:gap-6 font-montserrat  mt-28 justify-center">
-          <div className="bg-purple-1/10 border border-purple-1 px-2 md:px-6 p-5 pt-12 md:pt-28 relative text-center rounded">
+          <div className="bg-purple-1/10 border border-purple-1 px-2 md:px-6 p-4 md:p-6 pt-12 md:pt-28 relative text-center rounded-md md:rounded-lg">
             <div className="absolute top-[-30%] right-0 left-0">
               <Image
                 src={second}
@@ -44,7 +44,7 @@ const Prizes = () => {
               N300,000
             </span>
           </div>
-          <div className="bg-purple-3/10 border border-purple-3 px-2 md:px-6  p-5 pt-12 md:pt-28 relative text-center rounded mb-[-20px]">
+          <div className="bg-purple-3/10 border border-purple-3 px-2 md:px-6  p-4 md:p-6 pt-12 md:pt-28 relative text-center rounded-md md:rounded-lg mb-[-20px]">
             <div className="absolute top-[-50%] right-[-20%] left-[-20%]">
               <Image
                 src={first}
@@ -60,12 +60,12 @@ const Prizes = () => {
               N400,000
             </span>
           </div>
-          <div className="bg-purple-1/10 border border-purple-1 px-2 md:px-6  p-5 pt-12 md:pt-28 relative text-center rounded">
+          <div className="bg-purple-1/10 border border-purple-1 px-2 md:px-6  p-4 md:p-6 pt-12 md:pt-28 relative text-center rounded-md md:rounded-lg">
             <div className="absolute top-[-30%] right-[2%] left-[2%]">
               <Image
                 src={third}
                 alt="Medal for third runner up"
-                className="w-full"
+                className="w-full "
               />
             </div>
             <span className="block text-xs md:text-4xl font-bold">3rd</span>

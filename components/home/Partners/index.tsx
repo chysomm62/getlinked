@@ -16,32 +16,29 @@ const Partners = () => {
           <h2 className=" font-semibold mb-4 text-center">
             Partners and Sponsors
           </h2>
-          <p className="font-book text-sm font-montserrat text-center  leading-7 my-4 w-80 mx-auto ">
+          <p className="font-book text-sm font-montserrat text-center  leading-7 my-4 md:w-80 mx-auto ">
             Getlinked Hackathon 1.0 is honored to have the following major
             companies as its partners and sponsors
           </p>
         </div>
-        <div className="border border-purple-1 p-6 md:p-12 rounded mt-6 md:mt-10 flex items-center justify-center px-10">
+        <div className="border border-purple-1 p-6 md:p-12 rounded-md md:rounded-xl mt-6 md:mt-10 flex items-center justify-center px-10">
           <div className="grid grid-cols-3 max-w-screen-md mx-auto ">
             {images.map((image, index: number) => (
               <div
                 key={index}
-                className="p-5 md:p-10 flex items-center justify-center relative"
+                className={` p-5 md:p-10 flex items-center justify-center relative`}
               >
-                {index === 0 || index === 1 || 2 ? (
-                  <div className="absolute bottom-0 border-t border-purple-1 left-3 right-3"></div>
-                ) : (
-                  ""
+                {(index === 0 || index === 1 || index === 2) && (
+                  <div className="absolute bottom-0 border-t border-purple-1 left-2 md:left-6 right-2 md:right-6"></div>
                 )}
 
-                {/* {(index === 0 || 1 || 3 || 4) && (
-                  <div className="absolute right-0 bottom-0 top-0 border-r border-purple-1"></div>
-                )} */}
-
+                {(index === 0 || index === 1 || index === 3 || index === 4) && (
+                  <div className="absolute right-0 bottom-2 md:bottom-6 top-2 md:top-6 border-r border-purple-1"></div>
+                )}
                 <Image
                   src={image}
                   alt={`company logo ${image}`}
-                  className="w-full"
+                  className="w-full hover:scale-105 transition-transform duration-150 ease-in-out"
                 />
               </div>
             ))}

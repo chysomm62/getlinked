@@ -3,10 +3,14 @@ import man_on_cloud from "@/public/images/home/man_on_cloud.png";
 import { FAQsData } from "@/lib/variables/FAQsData";
 import { BsPlus } from "react-icons/bs";
 import Button from "@/components/common/Button";
+import { FC } from "react";
 
-const FAQs = () => {
+interface faqProp {
+  faqRef: any;
+}
+const FAQs: FC<faqProp> = ({ faqRef }) => {
   return (
-    <section className="py-6 md:py-14 text-white line">
+    <section ref={faqRef} className="py-6 md:py-14 text-white line">
       <div className="px-5 md:flex md:justify-between md:items-center py-6 gap-5 lg:gap-16 max-w-screen-xl mx-auto  ">
         <div className="flex-1 mt-8">
           <h2 className=" font-semibold mb-4 text-center lg:text-left">
@@ -26,7 +30,7 @@ const FAQs = () => {
                 {data.question}
               </p>
               <Button className="p-0">
-                <BsPlus color="rgba(212, 52, 254, 1)" size={18} />
+                <BsPlus color="rgba(212, 52, 254, 1)" size={20} />
               </Button>
             </div>
           ))}

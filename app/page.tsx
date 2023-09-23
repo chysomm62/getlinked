@@ -13,25 +13,23 @@ import {
 import { useRef } from "react";
 
 export default function Home() {
-  const homeRef = useRef() as any;
-  const aboutRef = useRef() as any;
-  const coursesRef = useRef() as any;
-  const testimonialRef = useRef() as any;
-  const communityRef = useRef() as any;
+  const timelineRef = useRef() as any;
+  const overviewRef = useRef() as any;
+  const faqRef = useRef() as any;
+  const contactRef = useRef() as any;
   return (
     <>
       <Header
-        homeRef={homeRef}
-        aboutRef={aboutRef}
-        coursesRef={coursesRef}
-        testimonialRef={testimonialRef}
-        communityRef={communityRef}
+        timelineRef={timelineRef}
+        overviewRef={overviewRef}
+        faqRef={faqRef}
+        contactRef={contactRef}
       />
       <Introduction />
       <Rules />
       <Criteria />
-      <FAQs />
-      <Timeline />
+      <FAQs faqRef={faqRef} />
+      <Timeline timelineRef={timelineRef} />
       <Prizes />
       <Partners />
     </>

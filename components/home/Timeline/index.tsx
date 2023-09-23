@@ -1,10 +1,15 @@
 import Image from "next/image";
 import man_on_cloud from "@/public/images/home/man_on_cloud.png";
 import { TimelineData } from "@/lib/variables/Timeline";
+import { FC } from "react";
 
-const Timeline = () => {
+interface timelineProp {
+  timelineRef: any;
+}
+
+const Timeline: FC<timelineProp> = ({ timelineRef }) => {
   return (
-    <section className="py-6 md:py-14 text-white">
+    <section className="py-6 md:py-14 text-white" ref={timelineRef}>
       <div className=" max-w-screen-lg mx-auto  ">
         <div className=" mt-8 px-8">
           <h2 className=" font-semibold mb-4 text-center">Timeline</h2>

@@ -69,19 +69,6 @@
   position: relative;
 }
 
-.hero_text::before {
-  content: "";
-  left: 5%;
-  position: absolute;
-  top: 10%;
-  width: 16px;
-  height: 16px;
-  background-image: url("/patterns/hero_circle1.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: left center;
-}
-
 .hero_text::after {
   content: "";
   left: 95%;
@@ -95,7 +82,30 @@
   background-position: left center;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 768px) {
+  .innova::after {
+    min-width: 200px;
+    min-height: 25px;
+  }
+  .h1::before {
+    min-width: 30px;
+    min-height: 30px;
+    left: 15%;
+    top: -55%;
+  }
+  .h1::after {
+    min-width: 28px;
+    min-height: 28px;
+    left: 90%;
+  }
+  .c::before {
+    width: 40px;
+    height: 60px;
+    top: -80%;
+  }
+}
+
+@media (min-width: 1024px) {
   .innova::after {
     min-width: 250px;
     min-height: 30px;
