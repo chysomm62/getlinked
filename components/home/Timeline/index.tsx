@@ -4,7 +4,7 @@ import { TimelineData } from "@/lib/variables/Timeline";
 
 const Timeline = () => {
   return (
-    <section className="py-6 md:py-14 text-white line">
+    <section className="py-6 md:py-14 text-white">
       <div className=" max-w-screen-lg mx-auto  ">
         <div className=" mt-8 px-8">
           <h2 className=" font-semibold mb-4 text-center">Timeline</h2>

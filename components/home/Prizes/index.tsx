@@ -6,7 +6,7 @@ import third from "@/public/images/home/bronze_medal.png";
 
 const Prizes = () => {
   return (
-    <section className="py-6 md:py-14 text-white line">
+    <section className="py-6 md:py-14 text-white">
       <div className="md:flex items-center justify-center">
         <div className="flex-1"></div>
         <div className="flex-1">
@@ -40,7 +40,7 @@ const Prizes = () => {
             <span className="block text-xs md:text-2xl font-semibold">
               Runner
             </span>
-            <span className="block text-purple-1 text-sm font-bold text-sm md:text-3xl">
+            <span className="block text-purple-1 font-bold text-sm md:text-3xl">
               N300,000
             </span>
           </div>
@@ -72,7 +72,7 @@ const Prizes = () => {
             <span className="block text-xs md:text-2xl font-semibold">
               Runner
             </span>
-            <span className="block text-purple-1 text-sm font-bold text-sm md:text-3xl">
+            <span className="block text-purple-1 font-bold text-sm md:text-3xl">
               N150,000
             </span>
           </div>
