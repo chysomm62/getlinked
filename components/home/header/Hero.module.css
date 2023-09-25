@@ -9,7 +9,8 @@
 
 .innova,
 .h1,
-.c {
+.c,
+.version {
   position: relative;
 }
 
@@ -34,6 +35,11 @@
   min-width: 14px;
   min-height: 14px;
   background-image: url("/patterns/star_white.svg");
+  -webkit-animation: brighten 10s linear infinite;
+  -moz-animation: brighten 10s linear infinite;
+  -ms-animation: brighten 10s linear infinite;
+  -o-animation: brighten 10s linear infinite;
+  animation: brighten 10s linear infinite;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: left center;
@@ -77,7 +83,40 @@
   width: 9px;
   height: 9px;
   background-image: url("/patterns/star.svg");
+  -webkit-animation: brighten 10s linear infinite;
+  -moz-animation: brighten 10s linear infinite;
+  -ms-animation: brighten 10s linear infinite;
+  -o-animation: brighten 10s linear infinite;
+  animation: brighten 10s linear infinite;
   background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+.version::before {
+  content: "";
+  right: -30px;
+  position: absolute;
+  top: 5px;
+  bottom: 5px;
+  width: 30px;
+  height: 30px;
+  background-image: url("/patterns/chain.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+.version::after {
+  content: "";
+  right: -60px;
+  position: absolute;
+  top: 5px;
+  bottom: 5px;
+  width: 30px;
+  height: 30px;
+  background-image: url("/patterns/bomb.svg");
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: left center;
 }
@@ -103,6 +142,16 @@
     height: 60px;
     top: -80%;
   }
+  .version::before {
+    height: 40px;
+    width: 40px;
+    right: -40px;
+  }
+  .version::after {
+    height: 40px;
+    width: 40px;
+    right: -80px;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -125,5 +174,15 @@
     width: 53px;
     height: 73px;
     top: -70%;
+  }
+  .version::before {
+    height: 55px;
+    width: 55px;
+    right: -55px;
+  }
+  .version::after {
+    height: 55px;
+    width: 55px;
+    right: -110px;
   }
 }

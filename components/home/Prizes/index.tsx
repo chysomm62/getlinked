@@ -28,12 +28,12 @@ const Prizes = () => {
           />
         </div>
         <div className="flex-1 flex items-end gap-3 md:gap-6 font-montserrat  mt-28 justify-center">
-          <div className="bg-purple-1/10 border border-purple-1 px-2 md:px-6 p-4 md:p-6 pt-12 md:pt-28 relative text-center rounded-md md:rounded-lg">
+          <div className="bg-purple-1/10 border border-purple-1 px-2 md:px-6 p-4 md:p-6 pt-12 md:pt-28 relative text-center rounded-md md:rounded-lg hover:translate-y-4 transition-transform duration-500 ease-in">
             <div className="absolute top-[-30%] right-0 left-0">
               <Image
                 src={second}
                 alt="Medal for second runner up"
-                className="w-full"
+                className="w-full hover:scale-105 transition-transform duration-500 ease-in"
               />
             </div>
             <span className="block text-xs md:text-4xl font-bold">2nd</span>
@@ -44,12 +44,12 @@ const Prizes = () => {
               N300,000
             </span>
           </div>
-          <div className="bg-purple-3/10 border border-purple-3 px-2 md:px-6  p-4 md:p-6 pt-12 md:pt-28 relative text-center rounded-md md:rounded-lg mb-[-20px]">
+          <div className="bg-purple-3/10 border border-purple-3 px-2 md:px-6  p-4 md:p-6 pt-12 md:pt-28 relative text-center rounded-md md:rounded-lg hover:-translate-y-4 transition-transform duration-500 ease-in mb-[-20px]">
             <div className="absolute top-[-50%] right-[-20%] left-[-20%]">
               <Image
                 src={first}
                 alt="Medal for first runner up"
-                className="w-full"
+                className="w-full hover:scale-105 transition-transform duration-500 ease-in"
               />
             </div>
             <span className="block text-xs md:text-4xl font-bold">1st</span>
@@ -60,12 +60,12 @@ const Prizes = () => {
               N400,000
             </span>
           </div>
-          <div className="bg-purple-1/10 border border-purple-1 px-2 md:px-6  p-4 md:p-6 pt-12 md:pt-28 relative text-center rounded-md md:rounded-lg">
+          <div className="bg-purple-1/10 border border-purple-1 px-2 md:px-6  p-4 md:p-6 pt-12 md:pt-28 relative text-center rounded-md md:rounded-lg hover:translate-y-4 transition-transform duration-500 ease-in">
             <div className="absolute top-[-30%] right-[2%] left-[2%]">
               <Image
                 src={third}
                 alt="Medal for third runner up"
-                className="w-full "
+                className="w-full hover:scale-105 transition-transform duration-500 ease-in "
               />
             </div>
             <span className="block text-xs md:text-4xl font-bold">3rd</span>

@@ -9,11 +9,11 @@ const Introduction = () => {
           <Image src={bulb} alt="Bulb transmitting ideas" className="w-full" />
         </div>
         <div className="flex-1 mt-8">
-          <h2 className=" font-semibold mb-4 text-center lg:text-left">
+          <h2 className=" font-semibold mb-4 text-center md:text-left">
             Introduction to getlinked
             <span className="text-purple-1 block">tech Hackathon 1.0</span>
           </h2>
-          <p className="font-book text-sm font-montserrat text-center lg:text-left lg:mr-2 leading-7">
+          <p className="font-book text-sm font-montserrat text-center md:text-left md:mr-2 leading-7">
             Our tech hackathon is a melting pot of visionaries, and its purpose
             is as clear as day: to shape the future. Whether you&apos;re a
             coding genius, a design maverick, or a concept wizard, you&apos;ll

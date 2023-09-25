@@ -21,8 +21,8 @@ const Partners = () => {
             companies as its partners and sponsors
           </p>
         </div>
-        <div className="border border-purple-1 p-6 md:p-12 rounded-md md:rounded-xl mt-6 md:mt-10 flex items-center justify-center px-10">
-          <div className="grid grid-cols-3 max-w-screen-md mx-auto ">
+        <div className="border border-purple-1 p-6 md:p-12 rounded-md md:rounded-xl mt-6 md:mt-10 flex items-center justify-center px-10 max-w-screen-lg mx-auto">
+          <div className="grid grid-cols-3 max-w-screen-md mx-auto">
             {images.map((image, index: number) => (
               <div
                 key={index}
@@ -38,7 +38,7 @@ const Partners = () => {
                 <Image
                   src={image}
                   alt={`company logo ${image}`}
-                  className="w-full hover:scale-105 transition-transform duration-150 ease-in-out"
+                  className="w-full hover:scale-110 transition-transform duration-500 ease"
                 />
               </div>
             ))}

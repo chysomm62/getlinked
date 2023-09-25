@@ -24,7 +24,7 @@ const Criteria = () => {
           {CriteriaData.map((data) => (
             <p
               key={data.header}
-              className="font-book text-sm font-montserrat text-center lg:text-left lg:mr-2 leading-7 my-4"
+              className="font-book text-sm font-montserrat text-center md:text-left md:mr-2 leading-7 my-4"
             >
               <span className="text-purple-1">{data.header}</span>
               {data.content}

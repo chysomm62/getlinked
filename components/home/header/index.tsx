@@ -7,7 +7,6 @@ import styles from "./Hero.module.css";
 import { refTypes } from "@/lib/types/ref.types";
 import Button from "@/components/common/Button";
 import Nav from "./Nav";
-import { BombIcon, ChainIcon } from "@/components/common/Icons";
 
 const Header: FC<refTypes> = ({
   timelineRef,
@@ -48,14 +47,9 @@ const Header: FC<refTypes> = ({
                   getlinked Te<span className={`${styles.c}`}>c</span>h
                   <span className="block whitespace-nowrap">
                     Hackathon
-                    <span className="text-purple-1 "> 1.0</span>
-                    <span className="hidden md:flex items-center">
-                      <ChainIcon size="86" />
-                      <BombIcon size="58" />
-                    </span>
-                    <span className="flex items-center md:hidden">
-                      <ChainIcon size="34" />
-                      <BombIcon size="30" />
+                    <span className={`text-purple-1 ${styles.version}`}>
+                      {" "}
+                      1.0
                     </span>
                   </span>{" "}
                 </h1>
@@ -77,7 +71,7 @@ const Header: FC<refTypes> = ({
                 alt="man-wearing-smart-glasses-touching-virtual-screen 1"
               />
               <div
-                className={`absolute left-0 right-0 top-0 bottom-1 ${styles.virtual_screen}`}
+                className={`absolute left-0 right-0 top-0 bottom-1 rotating`}
               >
                 <Image
                   src={VirtualScreen}

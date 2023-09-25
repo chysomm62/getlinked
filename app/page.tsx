@@ -3,6 +3,7 @@
 import {
   Criteria,
   FAQs,
+  Footer,
   Header,
   Introduction,
   Partners,
@@ -32,6 +33,12 @@ export default function Home() {
       <Timeline timelineRef={timelineRef} />
       <Prizes />
       <Partners />
+      <Footer
+        timelineRef={timelineRef}
+        overviewRef={overviewRef}
+        faqRef={faqRef}
+        contactRef={contactRef}
+      />
     </>
   );
 }

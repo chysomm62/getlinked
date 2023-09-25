@@ -41,9 +41,9 @@ const Timeline: FC<timelineProp> = ({ timelineRef }) => {
               <div>
                 <div className="mx-auto mb-2 border-r md:border-r-4 border-purple-1 h-16 w-[1px] md:w-1 md:h-24"></div>
                 <div
-                  className={`gradient-background h-6 md:h-12 w-6 md:w-12 flex items-center justify-center rounded-full `}
+                  className={`gradient-background h-6 md:h-12 w-6 md:w-12 flex items-center justify-center rounded-full hover:skew-x-3 transition-transform duration-500 ease-in`}
                 >
-                  <p className={` leading-none text-xs md:text-2xl font-bold`}>
+                  <p className={` leading-none text-xs md:text-2xl font-bold `}>
                     {index + 1}
                   </p>
                 </div>
