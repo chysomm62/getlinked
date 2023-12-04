@@ -1,9 +1,13 @@
 import Image from "next/image";
 import lady from "@/public/images/home/sitting_lady.png";
 
+import styles from "./Rules.module.css";
 const Rules = () => {
   return (
-    <section className="py-6 md:py-14 text-white  bg-grey-1 line">
+    <section className="py-6 md:py-14 text-white  bg-grey-1 line relative">
+      <div className={styles.purple_lens}></div>
+      <div className={styles.purple_lens_bottom}></div>
+
       <div className="px-5 flex flex-col-reverse md:flex-row md:justify-between md:items-center py-6 gap-5 md:gap-16 max-w-screen-lg mx-auto">
         <div className="flex-1">
           <h2 className=" font-semibold mb-4 text-center md:text-left">

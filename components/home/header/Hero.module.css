@@ -1,10 +1,12 @@
 .hero {
   position: relative;
+}
+
+.purple_lens {
+  @apply absolute -top-20 md:-top-28 left-0 w-full md:w-5/6 aspect-square bg-contain bg-no-repeat bg-blend-multiply;
+
   background-image: url("/images/hero/purple_lens_mobile.png");
-  background-size: contain;
-  background-repeat: no-repeat;
   background-position: left top;
-  background-blend: multiply;
 }
 
 .innova,
@@ -25,6 +27,8 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: right bottom;
+
+  @apply animate-pulse-slow;
 }
 
 .h1::before {
@@ -43,6 +47,8 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: left center;
+
+  @apply animate-ping-slow;
 }
 
 .h1::after {
@@ -56,6 +62,8 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: left center;
+
+  @apply animate-pulse-slow;
 }
 
 .c::before {
@@ -69,6 +77,8 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: left center;
+
+  @apply animate-pulse-slow;
 }
 
 .hero_text {
@@ -91,6 +101,8 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: left center;
+
+  @apply animate-ping-very-slow;
 }
 
 .version::before {
@@ -119,9 +131,14 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: left center;
+
+  @apply animate-pulse-slow;
 }
 
 @media (min-width: 768px) {
+  .purple_lens {
+    background-image: url("/images/hero/purple_lens.png");
+  }
   .innova::after {
     min-width: 200px;
     min-height: 25px;

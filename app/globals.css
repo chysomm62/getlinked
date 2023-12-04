@@ -7,7 +7,7 @@ html {
 }
 
 body {
-  @apply bg-purple-2;
+  @apply bg-purple-2 bg-blend-multiply;
   max-width: 100%;
   overflow-x: hidden;
 }

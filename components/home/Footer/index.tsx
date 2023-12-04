@@ -71,7 +71,7 @@ const Footer: FC<refTypes> = ({
               {footerLinks1.map((item, index) => (
                 <li
                   key={index}
-                  className="cursor-pointer text-sm md:text-base font-normal mb-3 text-white hover:text-purple-1 "
+                  className="cursor-pointer text-sm md:text-base font-normal mb-3 text-white hover:text-purple-1  transition duration-300 ease-in-out"
                   onClick={() => handleClick(item.reff)}
                 >
                   {item.label}
@@ -87,28 +87,28 @@ const Footer: FC<refTypes> = ({
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FaInstagram className="text-white text-xl md:text-3xl hover:text-purple-1  " />
+                <FaInstagram className="text-white text-xl md:text-3xl hover:text-purple-1  transition duration-300 ease-in-out" />
               </a>
               <a
                 href="https://www.twitter.com"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <RiTwitterXFill className="text-white text-xl md:text-3xl hover:text-purple-1 " />
+                <RiTwitterXFill className="text-white text-xl md:text-3xl hover:text-purple-1  transition duration-300 ease-in-out" />
               </a>
               <a
                 href="https://www.facebook.com"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FaFacebookF className="text-white text-xl md:text-3xl hover:text-purple-1 " />
+                <FaFacebookF className="text-white text-xl md:text-3xl hover:text-purple-1  transition duration-300 ease-in-out" />
               </a>
               <a
                 href="https://www.linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FaLinkedinIn className="text-white text-xl md:text-3xl hover:text-purple-1 " />
+                <FaLinkedinIn className="text-white text-xl md:text-3xl hover:text-purple-1  transition duration-300 ease-in-out" />
               </a>
             </div>
           </div>

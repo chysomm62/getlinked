@@ -35,11 +35,16 @@ const config: Config = {
         purple: {
           1: "rgba(212, 52, 254, 1)", //light
           2: "rgba(21, 14, 40, 1)", //dark
-          3: 'rgba(144, 58, 255, 1)'
+          3: "rgba(144, 58, 255, 1)",
         },
       },
       boxShadow: {
         default: "0px 64px 64px -48px rgba(15, 15, 15, 0.1)",
+      },
+      animation: {
+        "pulse-slow": "pulse 5s linear infinite",
+        "ping-slow": "ping 5s linear infinite",
+        "ping-very-slow": "ping 8s linear infinite",
       },
     },
   },

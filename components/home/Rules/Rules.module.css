@@ -1,0 +1,20 @@
+.purple_lens {
+  @apply absolute -top-10 md:-top-14 left-0 w-full md:w-5/6 aspect-video bg-contain bg-no-repeat bg-blend-multiply;
+
+  background-image: url("/images/hero/purple_lens_mobile.png");
+  background-position: left top;
+}
+
+.purple_lens_bottom {
+  @apply absolute -bottom-2/3 -right-1/3 w-full md:w-4/6 aspect-square bg-contain bg-no-repeat bg-blend-multiply;
+
+  background-image: url("/images/hero/purple_lens_mobile.png");
+  background-position: left top;
+}
+
+@media (min-width: 768px) {
+  .purple_lensc,
+  .purple_lens_bottom {
+    background-image: url("/images/hero/purple_lens.png");
+  }
+}
